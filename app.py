@@ -17,9 +17,9 @@ if hist_button: #se o botão for clicado
 
     #exibir um gráfico Plotly interativo
     st.plotly_chart(fig, use_container_width=True)
+    
+    fig = px.scatter(car_data, x="odometer", y="price") # criar um gráfico de dispersão
+    
+    #exibir um gráfico Plotly interativo
+    st.plotly_chart(fig, use_container_width=True)
 
-# criar uma caixa de seleção
-build_histogram = st.checkbox('Criar um histograma')
-
-if build_histogram: # se a caixa de seleção for selecionada
-    st.write('Criando um histograma para a coluna odometer')
