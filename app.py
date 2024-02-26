@@ -19,12 +19,7 @@ if hist_button: #se o botão for clicado
     
     graf_button = st.button('Criar gráfico de dispersão') #criar um botão
     
-if graf_button: #se o botão for clicado
-    #escrever uma mensagem
-    st.write('Criando gráfico de dispersão para o conjunto de dados de anúncios de vendas de carros')
-    
     fig = px.scatter(car_data, x="odometer", y="price") # criar um gráfico de dispersão
     
     #exibir um gráfico Plotly interativo
     st.plotly_chart(fig, use_container_width=True)
-
