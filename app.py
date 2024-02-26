@@ -22,4 +22,4 @@ if hist_button: #se o botão for clicado
 build_histogram = st.checkbox('Criar um histograma')
 
 if build_histogram: # se a caixa de seleção for selecionada
-st.write('Criando um histograma para a coluna odometer')
+    st.write('Criando um histograma para a coluna odometer')
